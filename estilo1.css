@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    position: sticky;
+    top:0px;
+    height: 100vh;
+    justify-content: space-evenly;
+    background-color: #F3F0D7
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(146, 146, 146);
+    font-size: large;
+    font-weight: 300;
+
+}
+header div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 300;
+}
+p, li, dd{
+    font-weight: lighter;
+    text-indent: 1rem;
+}
+.main-section-contact p{
+    text-indent: 0;
+}
+main{
+    width: 85vw;
+}
+h2{
+    display: flex;
+    height: 8vh;
+    background-color: #F7D59C;
+    font-size: 2rem;
+    font-style: italic;
+    padding-left: 4rem;
+    align-items: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+div.main-section, .main-section-contact{
+    display: flex;
+    background-image: url(./img/background.png);
+    min-height: 68vh;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    row-gap: 1rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+h4{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.main-section-contact{
+    justify-content: flex-start;
+}
+ol{
+    list-style-position: inside;
+}
+ol.lista-chica{
+    list-style-type:lower-latin;
+}
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+dt {
+    margin-bottom: .5rem;
+    text-indent: 0rem;
+}
+.article-index, .article-about, .article-rules, table, .article-games, .regForm{
+    background-color: rgba(94, 69, 75, 0.918);
+    width: 70vw;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    min-height: 6rem;
+    color:whitesmoke;
+    box-shadow: 10px 10px 44px 18px rgba(0,0,0,0.34);;
+}
+caption{
+    text-align: left;
+}
+
+div.banner{
+    height: 20vh;
+    background-image: url(./img/design2_image1.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+}
+div.banner2{
+    height: 20vh;
+    background-image: url(./img/hockey1.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+}
+div.banner3{
+    height: 20vh;
+    background-image: url(./img/design1_image1.jpg);
+    background-position-y: 80%;
+    background-size: cover;
+}
+div.banner4{
+    height: 20vh;
+    background-image: url(./img/hockey2.jpg);
+    background-position-y: 90%;
+    background-size: cover;
+}
+div.banner5{
+    height: 20vh;
+    background-image: url(./img/hockey3.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+}
+div.banner6{
+    height: 20vh;
+    background-image: url(./img/hockey4.jpeg);
+    background-position-y: 45%;
+    background-size: cover;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    text-align: center;
+    background-color: #F7D59C;
+    height: 4vh;
+    font-size: large;
+    width: 85vw;
+}
+
+table{
+    text-align: left;
+}
+td{
+    font-weight: lighter;
+    padding: .5rem;
+}
+tbody tr:nth-child(odd){
+    background-color: #CEAB93;
+}
+tbody tr{
+    background-color: #E3CAA5;
+}
+.celdafechas{
+    text-align: center;
+    background-color: #AD8B73 ;
+}
+.article-games{
+    display: inline;
+}
+main a{
+    color: #E3CAA5
+}
+
+.personalInformation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nombre, .address, .bDate, .grade, .gender{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+input, select{
+    border-style: none;
+    border-bottom: solid 1px #E3CAA5 ;
+    background: none;
+    color: #E3CAA5;
+}
+fieldset{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-color: #AD8B73 ;
+    border-width: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: lighter;
+}
+.playPosition, .uniform{
+    display: flex;
+    flex-wrap: wrap;
+}
+.playPosition label, .uniform label{
+    width: 50%;
+}
+span:hover iframe{
+    display: block;
+    position: absolute;
+    transition-delay: 2s;
+}
+iframe{
+    display: none;
+}
+.mapsIcon{
+    height: 1rem;
+}
+.AJK, .greenbay, .howard, .marjorie, .north, .south{
+    display: flex;
+    justify-content: space-between;
+}
+.fname, .lname{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.nombre input{
+    flex-grow: 1;
+}
+.address input{
+    flex-grow: 1;
+}
+.street, .zip, .city{
+    display: flex;
+    flex-wrap: wrap;
+}
+.street{
+    width: 50%;
+}
+.zip{
+    width: 20%;
+}
+.zip input{
+    width: 1px;
+}
+.city{
+    width: 30%;
+}
+.signature{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nSignature{
+    display: flex;
+    width: 70%;
+}
+.dSignature{
+    display: flex;
+    width: 30%;
+}
+.dSignature input{
+    flex-grow: 1;
+}
+.nSignature input{
+    flex-grow: 1;
+}
+.submit{
+    border: 1px solid;
+    background: #AD8B73 ;
+    padding: .3rem;
+    border-radius: .7rem;
+}
+
+
